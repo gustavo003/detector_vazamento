@@ -80,6 +80,8 @@
   function onConnect() {
     topic = "saoluis_uema_gassensor_33";
     document.getElementById("connect").disabled = true;
+
+    document.getElementById("error").innerHTML = "";
     client.subscribe(topic);
   }
   function onConnectionLost(responseObject) {
